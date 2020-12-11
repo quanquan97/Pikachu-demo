@@ -2,4 +2,10 @@
   "devDependencies": {
     "cssnano": "^4.1.10"
   }
-}
+
+,
+  "scripts": {
+    "start": "npx parcel src/index.html",
+    "build": "npx parcel build src/index.html --public-url=./",
+    "upload": "npm run build& git add .& git commit -am \"upload\"& git push"
+  }}
